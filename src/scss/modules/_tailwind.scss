@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
+@layer components {
+  .container {
+    padding: 0 10px;
+    margin: 0px auto;
+    max-width: 960px;
+  }
+}
+
+@layer utilities {
+  .transition-hover {
+    transition: all 0.3s ease 0s;
+  }
+  .font-times {
+    font-family: "Times New Roman", Times, serif;
+  }
+}

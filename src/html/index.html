@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include("components/head.html", {
+"title": "Gulp-template"
+})
+
+<body>
+  <!-- @@include("components/preloader.html") -->
+
+  <div class="wrapper">
+    <div class="content">
+
+      <div class="container bg-white shadow-lg">
+        @@include("components/header.html")
+        <h2 class="text-center font-bold text-[17px] leading-[20px] mb-[15px]">
+          Worldwide Escorts Directory of Independent Escorts & Escort Agencies
+        </h2>
+        @@include("components/ads-1.html")
+        @@include("components/featured.html")
+        @@include("components/ads-2.html")
+        @@include("components/catalog.html")
+        @@include("components/footer.html")
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
