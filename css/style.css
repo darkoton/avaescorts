@@ -952,6 +952,10 @@ body._lock-scroll {
     max-height: 68%;
   }
 
+  .sm\:w-auto {
+    width: auto;
+  }
+
   .sm\:max-w-\[208px\] {
     max-width: 208px;
   }
