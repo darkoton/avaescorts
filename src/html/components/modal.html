@@ -1,0 +1,67 @@
+<div id="modal" class="fixed flex top-0 left-0 w-full h-full z-50 bg-black bg-opacity-70 transition-hover">
+
+  <div class="p-1 sm:p-2 m-auto bg-white max-w-[578px] h-[619px]">
+    <div class="h-full bg-[url('../img/modal/warning.jpg')] bg-no-repeat bg-bottom">
+      <h4 class="text-center text-[#ba4d48] font-bold font-times text-[24px] leading-[37px] pt-2">
+        Adult Content Warning!
+      </h4>
+
+      <p class="px-2 sm:px-5 my-3 text-xs leading-[14px]">
+        You are about to enter a website that may contain content of an adult nature. These pages are designed for
+        ADULTS
+        only and may include pictures and materials that some viewers may find offensive. In order to enter to the
+        website
+        you need to be at least eighteen (18) years old or twenty one (21) in places where eighteen years is not the age
+        of
+        majority. If you are under the age of 18 (21) if such material offends you or if it is illegal to view such
+        material
+        in your community please do not continue. The following terms and conditions apply to this site. Entering the
+        site
+        via the link below will constitute your agreement to the following terms and conditions:
+      </p>
+
+      <ul class="my-3 pl-[30px] sm:pl-[50px]">
+        <li class="list-disc">
+          <p class="text-xs leading-[14px]">I am 18 years of age or older.</p>
+        </li>
+        <li class="list-disc">
+          <p class="text-xs leading-[14px]">I accept all resposibility for my own actions; and.
+          </p>
+        </li>
+        <li class="list-disc">
+          <p class="text-xs leading-[14px]">I agree that I am legally bound to these <a href="#"
+              class="underline text-red">Terms and
+              Conditions</a>.</p>
+        </li>
+      </ul>
+
+      <p class="my-3 px-2 sm:px-5 text-xs leading-[14px]">
+        It is not our intention to offend, so if you are under 18 years of age, or feel that you may be offended by this
+        site, please go elsewhere.
+      </p>
+
+      <div class="flex flex-col items-center">
+        <button data-confirm class="bg-transparent">
+          <div class="w-full max-w-[115px]">
+            <img src="./img/modal/button.jpg" alt="">
+          </div>
+        </button>
+        <button data-exit class="underline bg-transparent text-[#b94d4a] mt-[7px]">Exit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('modal')
+
+  modal.querySelector('[data-confirm]').addEventListener('click', () => {
+    modal.classList.add('pointer-events-none')
+    modal.classList.add('opacity-0')
+  })
+
+  modal.querySelector('[data-exit]').addEventListener('click', () => {
+    window.history.back();
+
+  })
+</script>
