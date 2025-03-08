@@ -14,6 +14,23 @@ new Swiper('.featured-slider', {
   },
 
   breakpoints: {
-    767.8: {},
+    0: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 2,
+    },
+    460: {
+      slidesPerView: 3,
+    },
+    580: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 5,
+    },
+    992: {
+      slidesPerView: 6,
+    },
   },
 });

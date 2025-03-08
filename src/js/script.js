@@ -15,7 +15,7 @@
 
 /*@@include("./modules/tabs.js"); // TABS */
 
-/*@@include("./modules/spoiler.js"); // TABS */
+@@include("./modules/spoiler.js"); // SPOILER 
 
 /* @@include("./modules/parallax.js")  // PARALLAX EFFECT */
 

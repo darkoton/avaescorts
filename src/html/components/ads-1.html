@@ -1,11 +1,19 @@
-<div class="flex bg-pink-light p-2 gap-x-4 mb-[20px]">
-  <div class="w-full max-w-1/2">
-    <img class="w-full" src="./img/ads/468_60_escort_avantgarde_37.jpg" alt="Ads">
-  </div>
+<div class="_container">
+  <div class="flex flex-col min-[550px]:flex-row bg-pink-light p-1 sm:p-2 gap-x-4 gap-y-1 mb-[10px] sm:mb-[20px]">
+    <div class="w-full max-w-1/2">
+      @@if(context.first.type === 'video'){
+      <video class="w-full" muted autoplay loop src="@@first.url">video not available</video>
+      } @@if(context.first.type !== 'video'){
+      <img class="w-full" src="@@first.url" alt="Ads" />
+      }
+    </div>
 
-  <div class="w-full max-w-1/2">
-    <video class="w-full" muted autoplay loop src="./assets/ads/Banner468x60.mp4">
-      video not available
-    </video>
+    <div class="w-full max-w-1/2">
+      @@if(context.second.type === 'video'){
+      <video class="w-full" muted autoplay loop src="@@second.url">video not available</video>
+      } @@if(context.second.type !== 'video'){
+      <img class="w-full" src="@@second.url" alt="Ads" />
+      }
+    </div>
   </div>
 </div>
