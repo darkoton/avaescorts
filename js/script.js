@@ -369,6 +369,7 @@ if (spollersArray.length > 0) {
         spollersBlock.classList.add('_init');
         initSpollerBody(spollersBlock);
         spollersBlock.addEventListener('click', setSpollerAction);
+        spollersBlock.addEventListener('mousestart', setSpollerAction);
       } else {
         spollersBlock.classList.remove('_init');
         initSpollerBody(spollersBlock, false);
